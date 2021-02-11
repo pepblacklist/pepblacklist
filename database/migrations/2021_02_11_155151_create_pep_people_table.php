@@ -15,7 +15,7 @@ class CreatePepPeopleTable extends Migration
     {
         Schema::create('pep_entities', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_politic_party');
+            $table->unsignedBigInteger('id_political_party');
             $table->string('name');
             $table->string('lastname');
             $table->string('identity');
@@ -23,7 +23,7 @@ class CreatePepPeopleTable extends Migration
             $table->integer('pep_type');                // personal, business or anonymous society   
             $table->integer('status');
             $table->string('job_position');             // job position if aplay
-            $table->foreign('id_politic_party')->references('id')->on('pep_politic_parties');
+            $table->foreign('id_political_party')->references('id')->on('pep_political_parties');
             $table->timestamps('');
         });
     }

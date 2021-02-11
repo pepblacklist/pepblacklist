@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class pep_politic_party extends Model
+class pep_political_party extends Model
 {
     use HasFactory;
 

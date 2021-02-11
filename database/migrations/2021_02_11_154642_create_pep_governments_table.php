@@ -15,12 +15,12 @@ class CreatePepGovernmentsTable extends Migration
     {
         Schema::create('pep_governments', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_politic_party');
+            $table->unsignedBigInteger('id_political_party');
             $table->string('president');
             $table->string('image');
             $table->date('date_init');
             $table->date('date_end');
-            $table->foreign('id_politic_party')->references('id')->on('pep_politic_parties');
+            $table->foreign('id_political_party')->references('id')->on('pep_political_parties');
             $table->timestamps();
         });
     }

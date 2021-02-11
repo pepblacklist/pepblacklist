@@ -13,7 +13,7 @@ class CreatePepPoliticPartiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pep_politic_parties', function (Blueprint $table) {
+        Schema::create('pep_political_parties', function (Blueprint $table) {
             $table->id();
             $table->string('title');
             $table->string('decription');
@@ -29,6 +29,6 @@ class CreatePepPoliticPartiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pep_politic_parties');
+        Schema::dropIfExists('pep_political_parties');
     }
 }

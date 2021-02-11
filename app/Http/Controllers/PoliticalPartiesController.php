@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PoliticPartiesController extends Controller
+class PoliticalPartiesController extends Controller
 {
     /**
      * Handle the incoming request.
