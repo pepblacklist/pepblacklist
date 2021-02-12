@@ -16,4 +16,9 @@ class PoliticalPartiesController extends Controller
     {
         //
     }
+
+    public function index()
+    {
+        return view('politicalparties.table');
+    }
 }

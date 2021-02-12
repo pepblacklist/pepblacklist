@@ -16,4 +16,9 @@ class EntityController extends Controller
     {
         //
     }
+    
+    public function index()
+    {
+        return view('entities.table');
+    }
 }

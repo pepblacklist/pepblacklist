@@ -32,9 +32,9 @@ class RegisterController extends Controller
     protected $redirectTo = RouteServiceProvider::HOME;
 
 
-    public function showRegistrationForm(){
+    /*public function showRegistrationForm(){
         return redirect('/');
-    }
+    }*/
 
     /**
      * Create a new controller instance.

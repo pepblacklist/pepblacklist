@@ -16,4 +16,10 @@ class ActionsController extends Controller
     {
         //
     }
+
+    public function index()
+    {
+        return view('actions.table');
+    }
+
 }
